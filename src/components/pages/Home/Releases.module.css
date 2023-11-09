@@ -1,0 +1,42 @@
+.top{
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+.top h1{
+    color: var(--light, #EFEEE0);
+    font-weight: 700;
+}
+
+.top__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    height: auto;   
+    gap: 1rem; 
+}
+
+.top__list div {
+    max-width: 15%;
+    height: auto;    
+    margin: 1rem;
+}
+
+@media (max-width: 640px) {
+    .top__list div {
+        max-width: 40%;
+        margin: 1rem auto;
+    }
+}
+
+
+.top__list img{
+    max-width: 100%;
+}
+
+.top__list p{
+    color: #FFF;
+    font-weight: 400;
+    text-align: center;
+    margin-top: .5rem;
+}
