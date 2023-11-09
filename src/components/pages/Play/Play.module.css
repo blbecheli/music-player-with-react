@@ -1,0 +1,95 @@
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(29, 33, 35, 0.30);
+    backdrop-filter: blur(15px);
+    height: 4rem;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+@media (max-width: 640px) {
+    .player{
+        padding: 0;
+        height: fit-content;
+    }
+
+    .controls{
+        margin: 0.5rem!important;
+        padding: 0;
+    }
+
+    .controls__info_date {
+        margin: 0!important;
+    }
+
+    .controls__favorite img{
+        width: 30px !important;
+    
+    }
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 0 auto;
+}
+
+.controls__info {
+    display: flex;
+}
+
+.controls__info_date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+}
+
+.controls__info_date p {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.controls__info_date span {
+    color: rgba(255, 255, 255, 0.44);
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.controls__button {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.controls__button button {
+    background-color: transparent;
+    border: none;
+}
+
+.controls__input {    
+    background-color: #FACD66 !important;
+    color: #FACD66 !important;
+    width: 70%;   
+}
+
+
+.controls button img {
+    height: 40px;
+}
+
+#volume-control {
+    width: 100px;
+}
+
+.controls__favorite img {
+    width: 40px;
+}
