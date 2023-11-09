@@ -1,16 +1,23 @@
 .top{
     width: 90vw;
-    margin: 1rem auto;
+    margin: 4rem auto;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, transparent 0%, #1D2123 30%), url('./img/background.jpg');
+    /* background-size: cover; */
+    background-position: center;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5)
 }
 
 .top h1{
     color: var(--light, #EFEEE0);
     font-weight: 700;
+    text-align: center;
+    margin: 2rem auto;
 }
 
 .top__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;    
     height: auto;   
     gap: 1rem; 

@@ -35,9 +35,10 @@ const Top = () => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <>
+        <div className={style.container}>
           <section className={style.album}>
             <Carousel>
+              <h1 className={style.album__title}>Hot albums!</h1>
               {chart.albums.data.map((item) => (
                 <Carousel.Item key={item.id} onClick={() => handleAlbum(item.id)}>
                   <Link to="/album" key={item.id}>
@@ -66,7 +67,7 @@ const Top = () => {
               ))}
             </div>
           </section>
-        </>
+        </div>
       )}
     </>
   );

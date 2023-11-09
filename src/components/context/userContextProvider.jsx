@@ -6,7 +6,7 @@ const UserContextProvider = ({ children }) => {
   const [idAlbum, setIdAlbum] = useState("")
   const [idArtist, setIdArtist] = useState("")
   const [search, setSearch] = useState("")
-  const [favorite, setFavorite] = useState([908604612,1352360622])
+  const [favorite, setFavorite] = useState([])
   
 
 

@@ -1,94 +1,119 @@
-.album{
-    width: 40%;
-    height: auto;
+.container {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    margin: 2rem auto;
+    height: fit-content;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, transparent 0%, #1D2123 30%), url('./img/background.jpg');
+    /* background-size: cover; */
+    background-position: center;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5)
+
+}
+
+.album__title {
+    text-align: center;
+    color: #EFEEE0;
+    font-weight: 700;
+}
+
+.album {
+    width: 60%;
+    height: 70vh;
     display: flex;
     margin-left: 0 auto;
     align-items: center;
     justify-content: space-around;
-    column-count: 2;   
+    column-count: 2;
+}
+
+.album img {
+    border-radius: 15px;
+    width: auto;
+    height: 60vh;
+    object-fit: contain;
 }
 
 @media (max-width: 640px) {
-  .album{
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .album div{
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .album div img{
-    width: 100%;
-  }
-}
-
-
-.album img{
-    border-radius: 15px;
-    width: auto;
-}
-
-@media (max-width: 960px) {
-    .artist{
-        width: 90%!important;
-        margin-left: 1rem!important;
-        padding: 1rem 0;
-        height: fit-content;
+    .container {
+        display: inline-block;
     }
 
-    .artist__singers{
-        column-count: 2!important;       
-        width: 90vw;  
-        margin: 1rem auto;    
-        column-gap: 0 !important;  
+    .album {
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .artist__singer a{
-        width: 100vw;
+    .album div {
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .artist__cover{
-        width: 50%;
+    .album div img {
+        width: 100%;
     }
 }
 
-.artist{
-    width: 50%;
-    margin: 0 auto;
-    /* margin-left: 2rem; */
+
+.artist {
+    width: 40%;
+    margin: 0 auto;    
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
 
-.artist h1{    
+.artist h1 {
     color: #EFEEE0;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-.artist__singers{
+.artist__singers {
     column-count: 3;
     column-gap: 5rem;
 }
 
-.artist__cover{
+.artist__cover {
     height: 17vh;
     width: auto;
     margin-bottom: 2rem;
     break-inside: avoid;
 }
 
-.artist__cover img{
+.artist__cover img {
     height: 100%;
     border-radius: 15px;
 }
 
-.artist__cover p{
+.artist__cover p {
     font-weight: 400;
     color: #FFF;
-    
+
+}
+
+@media (max-width: 960px) {
+    .artist {
+        width: 90% !important;
+        margin-left: 1rem !important;
+        padding: 1rem 0;
+        height: fit-content;
+    }
+
+    .artist__singers {
+        column-count: 2 !important;
+        width: 90vw;
+        margin: 1rem auto;
+        column-gap: 0 !important;
+    }
+
+    .artist__singer a {
+        width: 100vw;
+    }
+
+    .artist__cover {
+        width: 50%;
+    }
 }

@@ -1,3 +1,7 @@
+.section{
+    margin-bottom: 4rem;
+}
+
 .click{
     width: 90vw;
     margin: 1rem auto;
@@ -9,6 +13,10 @@
     width: 90vw;
     margin: 1rem auto;
     text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, transparent 0%, #1D2123 30%), url('./img/background.jpg');    
+    background-position: center;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5)
 }
 
 .album img{
@@ -30,7 +38,7 @@
 .album__list{
     width: 70%;
     height: auto;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 0 auto;
     display: flex;
     flex-direction: column;
@@ -38,6 +46,7 @@
     border-radius: 15px;
     gap: .5rem;
     padding: 2rem;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 640px) {
@@ -49,7 +58,10 @@
 .album__list div{    
     padding: 2rem; display: flex;
     justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.10);    
+    backdrop-filter: blur(15px);
     background-color: #1A1E1F;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     padding: .5rem 1rem;
     align-items: center;

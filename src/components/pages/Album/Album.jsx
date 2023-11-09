@@ -34,7 +34,7 @@ const Album = () => {
       ) : isLoading ? (
         <p>Loading ...</p>
       ) : (
-        <section>
+        <section className={styles.section}>
           <div className={styles.album}>
             <h2>{album.title}</h2>
             <h4>{album.artist.name}</h4>

@@ -7,7 +7,7 @@
 
 .artist{
     width: 100vw;
-    margin: 1rem auto;
+    margin: 4rem auto;
 }
 
 .artist__list{    
@@ -18,6 +18,7 @@
 .artist__list h2{
     color: #EFEEE0;
     text-align: center;
+    margin: 2rem auto;
 
 }
 
@@ -29,7 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 15px;    
 }
 
 .artist__list_singer h1{
@@ -40,6 +41,7 @@
 
 .artist__list_singer img{
     border-radius: 15px;
+    max-width: 100%;
 }
 
 .artist__chart{
@@ -52,11 +54,14 @@
 
 .artist__chart div{    
     display: flex;
-    justify-content: space-between;
-    background-color: #1A1E1F;
+    justify-content: space-between;    
     border-radius: 15px;
     padding: .5rem 1rem;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.10);    
+    backdrop-filter: blur(15px);
+    background-color: #1A1E1F;
+    box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .artist__chart p{
