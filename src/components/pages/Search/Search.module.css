@@ -1,0 +1,40 @@
+.search {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+    padding: auto;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+
+    .search div {
+        max-width: 45% !important;
+        margin: 0;
+    }
+}
+
+
+.search div {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--dark-alt, #1A1E1F);
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.search p {
+    color: #FFF !important;
+    font-weight: 400;
+}
+
+.search img {
+    border-radius: 20px;
+
+}
