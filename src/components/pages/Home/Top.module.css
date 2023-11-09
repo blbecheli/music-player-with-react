@@ -1,0 +1,94 @@
+.album{
+    width: 40%;
+    height: auto;
+    display: flex;
+    margin-left: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    column-count: 2;   
+}
+
+@media (max-width: 640px) {
+  .album{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .album div{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .album div img{
+    width: 100%;
+  }
+}
+
+
+.album img{
+    border-radius: 15px;
+    width: auto;
+}
+
+@media (max-width: 960px) {
+    .artist{
+        width: 90%!important;
+        margin-left: 1rem!important;
+        padding: 1rem 0;
+        height: fit-content;
+    }
+
+    .artist__singers{
+        column-count: 2!important;       
+        width: 90vw;  
+        margin: 1rem auto;    
+        column-gap: 0 !important;  
+    }
+
+    .artist__singer a{
+        width: 100vw;
+    }
+
+    .artist__cover{
+        width: 50%;
+    }
+}
+
+.artist{
+    width: 50%;
+    margin: 0 auto;
+    /* margin-left: 2rem; */
+    align-items: center;
+    text-align: center;    
+}
+
+.artist h1{    
+    color: #EFEEE0;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin: 0 auto;   
+}
+
+.artist__singers{
+    column-count: 3;
+    column-gap: 5rem;
+}
+
+.artist__cover{
+    height: 17vh;
+    width: auto;
+    margin-bottom: 2rem;
+    break-inside: avoid;
+}
+
+.artist__cover img{
+    height: 100%;
+    border-radius: 15px;
+}
+
+.artist__cover p{
+    font-weight: 400;
+    color: #FFF;
+    
+}
