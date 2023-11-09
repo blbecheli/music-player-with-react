@@ -1,0 +1,20 @@
+.side {
+    width: 8vw;
+    border: none;
+    border-radius: 32px;
+    /* background-color: #1A1E1F; */
+}
+
+.side menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+
+}
+
+.side li {
+    list-style: none;
+    padding: 2rem 0;
+
+}
