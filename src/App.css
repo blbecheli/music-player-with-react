@@ -1,0 +1,16 @@
+body{
+    background: #1D2123 !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+a:hover{
+    cursor: pointer;
+}
