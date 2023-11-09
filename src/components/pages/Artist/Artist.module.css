@@ -1,0 +1,76 @@
+.click{
+    width: 90vw;
+    margin: 1rem auto;
+    color: #FFF;
+    text-align: center;
+}
+
+.artist{
+    width: 100vw;
+    margin: 1rem auto;
+}
+
+.artist__list{    
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.artist__list h2{
+    color: #EFEEE0;
+    text-align: center;
+
+}
+
+.artist__list_singer{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.artist__list_singer h1{
+    color: #EFEEE0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.artist__list_singer img{
+    border-radius: 15px;
+}
+
+.artist__chart{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.artist__chart div{    
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1E1F;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+.artist__chart p{
+    color: #EFEEE0;
+    margin: auto;
+}
+
+.artist__chart button{
+    background-color: transparent;
+    color: #EFEEE0;
+    border: none;
+}
+
+.artist__play{
+    height: 25px!important;
+    cursor: pointer;
+}
