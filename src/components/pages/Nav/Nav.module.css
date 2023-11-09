@@ -36,7 +36,7 @@
 }
 
 .search input {
-    width: 100%;
+    width: 60vw;
     height: 1.5rem;
     margin: auto;
     padding: 0;
@@ -50,9 +50,6 @@
     font-weight: 600;
 }
 
-.search input:after {
-    background-image: url(../img/search.svg);
-}
 
 .search input::placeholder {
     color: rgba(255, 255, 255, 0.25);

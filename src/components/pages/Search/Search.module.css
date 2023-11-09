@@ -8,6 +8,12 @@
     justify-content: space-between;
 }
 
+.search__title{
+    color: #EFEEE0;
+    font-weight: 700;
+    text-align: center;
+}
+
 @media screen and (max-width: 640px) {
 
     .search div {
@@ -36,5 +42,4 @@
 
 .search img {
     border-radius: 20px;
-
 }

@@ -7,6 +7,7 @@ const UserContextProvider = ({ children }) => {
   const [idArtist, setIdArtist] = useState("")
   const [search, setSearch] = useState("")
   const [favorite, setFavorite] = useState([908604612,1352360622])
+  
 
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const UserContextProvider = ({ children }) => {
   }, [idMusic, idAlbum, idArtist, search, favorite])
 
   return (
-    <UserContext.Provider value={{ idMusic, setIdMusic, idAlbum, setIdAlbum, idArtist, setIdArtist, search, setSearch, favorite, setFavorite }}>
+    <UserContext.Provider value={{ idMusic, setIdMusic, idAlbum, setIdAlbum, idArtist, setIdArtist, search, setSearch, favorite, setFavorite}}>
       {children}
     </UserContext.Provider>
   )

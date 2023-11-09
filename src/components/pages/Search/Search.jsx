@@ -17,8 +17,13 @@ const Search = () => {
             setIsLoading(false);
             console.log(data);
         }
-        fetchMusic();
-    }, []);
+        if (search.trim() !== "") {
+            fetchMusic();
+          } else {
+            // Se a pesquisa estiver vazia, defina searching como nulo para evitar o erro
+            setSearching(null);
+          }
+    }, [search]);
 
     const handleArtist = (id) => {
         setIdArtist(id);
@@ -30,24 +35,26 @@ const Search = () => {
 
     return (
         <>
-            {isLoading ? (
-                <p>Loading...</p>
-            ) : (
-                <section className={styles.search}>
-                    {searching.data.map((item) => (
-                        <div key={item.id}>
-                            <Link to="/artist" key={item.artist.id} onClick={() => handleArtist(item.artist.id)}>
-                                <p>{item.artist.name}</p>
-                            </Link>
-                            <img src={item.artist.picture_medium} alt="" />
-                            <p onClick={() => handleMusic(item.id)}>{item.title}</p>
-                        </div>
-                    ))}
-
-                </section>
-            )}
-
-        </>
-    )
+        {!search ? (
+          <h1 className={styles.search__title}>Find a world of music!</h1>
+        ) : isLoading ? (
+          <p>Loading...</p>
+        ) : !searching || !searching.data ? (
+          <p>No results found.</p>
+        ) : (
+          <section className={styles.search}>
+            {searching.data.map((item) => (
+              <div key={item.id}>
+                <Link to="/artist" key={item.artist.id} onClick={() => handleArtist(item.artist.id)}>
+                  <p>{item.artist.name}</p>
+                </Link>
+                <img src={item.artist.picture_medium} alt="" />
+                <p onClick={() => handleMusic(item.id)}>{item.title}</p>
+              </div>
+            ))}
+          </section>
+        )}
+      </>
+    );
 }
 export default Search
