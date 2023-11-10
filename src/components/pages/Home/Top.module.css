@@ -9,7 +9,6 @@
     /* background-size: cover; */
     background-position: center;
     box-shadow: 10px -10px 10px -10px rgba(0, 0, 0, 0.5)
-
 }
 
 .album__title {
@@ -19,7 +18,7 @@
 }
 
 .album {
-    width: 60%;
+    width: 50%;
     height: 70vh;
     display: flex;
     margin-left: 0 auto;
@@ -35,9 +34,10 @@
     object-fit: contain;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
     .container {
         display: inline-block;
+        margin-left: 1rem;
     }
 
     .album {
@@ -57,10 +57,11 @@
 
 
 .artist {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;    
     align-items: center;
     text-align: center;
+    padding: 0 3rem;
 }
 
 .artist h1 {

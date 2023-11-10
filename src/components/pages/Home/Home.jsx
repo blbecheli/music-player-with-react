@@ -1,12 +1,10 @@
-import style from './Home.module.css'
-
 import Releases from './Releases'
 import Top from './Top'
 
 const Home = () => {
   return (
     <>
-      <div className={style.home}>        
+      <div>        
         <Top />
       </div>
       <Releases />

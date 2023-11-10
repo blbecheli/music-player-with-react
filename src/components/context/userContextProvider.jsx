@@ -7,7 +7,7 @@ const UserContextProvider = ({ children }) => {
   const [idArtist, setIdArtist] = useState("")
   const [search, setSearch] = useState("")
   const [favorite, setFavorite] = useState([])
-  
+  const [isPlaying, setIsPlaying] = useState(false);
 
 
   useEffect(() => {
@@ -16,10 +16,11 @@ const UserContextProvider = ({ children }) => {
     console.log("Artist Id: ", idArtist);
     console.log("Search: ", search);
     console.log("Favorite: ", favorite);
-  }, [idMusic, idAlbum, idArtist, search, favorite])
+    console.log("Is Playing: ", isPlaying);
+  }, [idMusic, idAlbum, idArtist, search, favorite, isPlaying])
 
   return (
-    <UserContext.Provider value={{ idMusic, setIdMusic, idAlbum, setIdAlbum, idArtist, setIdArtist, search, setSearch, favorite, setFavorite}}>
+    <UserContext.Provider value={{ idMusic, setIdMusic, idAlbum, setIdAlbum, idArtist, setIdArtist, search, setSearch, favorite, setFavorite, isPlaying, setIsPlaying}}>
       {children}
     </UserContext.Provider>
   )
